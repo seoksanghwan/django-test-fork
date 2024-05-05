@@ -50,6 +50,5 @@
     "cpu": "256",
     "memory": "512",
     "registeredAt": "2024-05-05T08:53:41.600Z",
-    "registeredBy": "arn:aws:sts::730335333809:assumed-role/AWSCodePipelineServiceRole-ap-northeast-2-inflearn-fargate-code/1714899221252",
-    "tags": []
+    "registeredBy": "arn:aws:sts::730335333809:assumed-role/AWSCodePipelineServiceRole-ap-northeast-2-inflearn-fargate-code/1714899221252"
 }
