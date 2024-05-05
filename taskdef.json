@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
 	    "name": "inflearn_docker",
-            "image": "<IMAGE1_NAME>",
+	    "image": "730335333809.dkr.ecr.ap-northeast-2.amazonaws.com/inflearn_docker:latest",
             "essential": true,
             "portMappings": [
                 {
