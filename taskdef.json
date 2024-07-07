@@ -51,5 +51,10 @@
     "memory": "512",
     "registeredAt": "2024-07-07T12:37:36.229Z",
     "registeredBy": "arn:aws:sts::767398114270:assumed-role/AWSCodePipelineServiceRole-ap-southeast-2-blue-green-pipeline/1720355855902",
-    "tags": []
+    "tags": [
+        {
+            "key": "stage",
+            "value": "dev"
+        }
+    ]
 }
