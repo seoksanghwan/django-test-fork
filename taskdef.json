@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:767398114270:task-definition/django-task:7",
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:767398114270:task-definition/django-task:9",
     "containerDefinitions": [
         {
             "name": "inflearn_docker",
@@ -22,7 +22,7 @@
     "family": "django-task",
     "executionRoleArn": "arn:aws:iam::767398114270:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 7,
+    "revision": 9,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -49,6 +49,7 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "registeredAt": "2024-05-05T08:53:41.600Z",
-    "registeredBy": "arn:aws:sts::767398114270:assumed-role/AWSCodePipelineServiceRole-ap-northeast-2-inflearn-fargate-code/1714899221252"
+    "registeredAt": "2024-07-07T12:37:36.229Z",
+    "registeredBy": "arn:aws:sts::767398114270:assumed-role/AWSCodePipelineServiceRole-ap-southeast-2-blue-green-pipeline/1720355855902",
+    "tags": []
 }
