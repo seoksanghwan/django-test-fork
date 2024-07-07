@@ -1,56 +1,33 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:767398114270:task-definition/django-task:7",
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:767398114270:task-definition/django-task:9",
     "containerDefinitions": [
         {
             "name": "inflearn_docker",
-            "image": "767398114270.dkr.ecr.ap-southeast-2.amazonaws.com/inflearn_docker:0.0.5",
+            "image": "767398114270.dkr.ecr.ap-northeast-2.amazonaws.com/inflearn_docker:latest",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "inflearn_docker-8000-tcp",
                     "containerPort": 8000,
                     "hostPort": 8000,
-                    "protocol": "tcp",
-                    "appProtocol": "http"
+                    "protocol": "tcp"
                 }
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
-            "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "awslogs-group": "/ecs/django-task",
-                    "awslogs-create-group": "true",
-                    "awslogs-region": "ap-southeast-2",
-                    "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
-            },
             "systemControls": []
         }
     ],
     "family": "django-task",
     "executionRoleArn": "arn:aws:iam::767398114270:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 7,
+    "revision": 9,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
         {
-            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
-        },
-        {
-            "name": "ecs.capability.execution-role-awslogs"
-        },
-        {
             "name": "com.amazonaws.ecs.capability.ecr-auth"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -60,9 +37,6 @@
         },
         {
             "name": "ecs.capability.task-eni"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
         }
     ],
     "placementConstraints": [],
@@ -73,12 +47,9 @@
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "cpu": "1024",
-    "memory": "3072",
-    "runtimePlatform": {
-        "cpuArchitecture": "X86_64",
-        "operatingSystemFamily": "LINUX"
-    },
-    "registeredAt": "2024-07-07T11:59:54.350Z",
-    "registeredBy": "arn:aws:iam::767398114270:root"
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2024-07-07T12:37:36.229Z",
+    "registeredBy": "arn:aws:sts::767398114270:assumed-role/AWSCodePipelineServiceRole-ap-southeast-2-blue-green-pipeline/1720355855902",
+    "tags": []
 }
